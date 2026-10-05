@@ -43,7 +43,7 @@ Ticket: {ticket}"""
     if api_key:
         # Online: use Groq (free tier, no credit card)
         client = Groq(api_key=api_key)
-        reply = client.chat.completions.create(model="llama-3.3-70b-versatile", temperature=0,
+        reply = client.chat.completions.create(model="openai/gpt-oss-20b", temperature=0,
                                                response_format={"type": "json_object"},
                                                messages=[{"role": "user", "content": prompt}])
         text = reply.choices[0].message.content
