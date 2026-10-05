@@ -1,6 +1,7 @@
 # 🛠️ Help Desk Ticket Assistant
 
 An AI tool that reads IT help desk tickets, sorts them by **category** and **priority**, and suggests **troubleshooting steps**. It runs fully on your own computer using a local AI model, so no ticket data is sent to the cloud.
+🔗 **Live demo:** https://ramonaidesk.streamlit.app
 
 ![Screenshot of the app](screenshot.png)
 
@@ -22,8 +23,9 @@ You type a problem like *"The whole second floor has no internet."* The app retu
 ## Built with
 
 - Python
-- [Ollama](https://ollama.com) with the Llama 3.2 model
 - [Streamlit](https://streamlit.io) for the web page
+- [Ollama](https://ollama.com) (Llama 3.2) when running on your own computer
+- [Groq](https://groq.com) (GPT-OSS 20B) for the online version
 
 ## How to run it
 
